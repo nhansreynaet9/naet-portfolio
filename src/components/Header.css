@@ -1,0 +1,79 @@
+.body {
+    background-color: #121212;
+}
+.header {
+  background-color: #121212; /* Dark background */
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  color: #a0a0a0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: white;
+}
+
+.social-icons a {
+  color: #a0a0a0;
+  font-size: 16px;
+  margin-left: 15px;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+.hero-content {
+  display: flex; /* side by side */
+  align-items: center; /* vertically center */
+  gap: 20px; /* space between image and text */
+}
+
+.profile-image {
+  width: 150px;   /* adjust size */
+  height: 150px;  /* adjust size */
+  border-radius: 50%; /* make it round */
+  object-fit: cover; /* ensure image covers circle */
+}
+
+.hero-text h1 {
+  margin: 0;
+}
+
+.hero-buttons {
+  margin-top: 10px;
+}
+
+.btn-yellow {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

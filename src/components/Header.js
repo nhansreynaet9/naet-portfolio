@@ -1,0 +1,32 @@
+import React from "react";
+import { FaLinkedinIn, FaBehance, FaTwitter } from "react-icons/fa";
+import "./Header.css";
+
+export default function Header() {
+  return (
+    <>
+      <header className="header">
+        <nav className="nav">
+          <ul className="nav-links">
+            <li>Home</li>
+            <li>Case Studies</li>
+            <li>Personal Projects</li>
+            <li>Recent work</li>
+            <li>Get In Touch</li>
+          </ul>
+          <div className="social-icons">
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+            <a href="#">
+              <FaBehance />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+}
