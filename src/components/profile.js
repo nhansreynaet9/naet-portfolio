@@ -7,9 +7,18 @@ export default function Profile() {
       <div className="hero-text">
         <h1 style={{ color: "white" }}>Nhan Sreyneat</h1>
         <p>
-          “Frontend developer specializing in React, with experience in API
-          integration, database management, and building polished web and mobile
-          applications.”
+          I’m a versatile developer with hands-on experience in web and mobile
+          application development. On the web side, I specialize in React JS,
+          creating responsive, user-friendly interfaces with reusable
+          components, REST API integration, and clean code architecture. My
+          recent projects include a task management app using custom React hooks
+          and a university scholarship/events platform with dynamic styling and
+          component-based design. On the mobile side, I’ve built Android
+          applications in Android Studio using MVC architecture, integrating
+          MySQL backends, and managing version control through GitHub. I’m
+          passionate about turning ideas into fully functional, visually
+          appealing digital solutions that deliver a smooth user experience
+          across devices.
         </p>
         <div className="hero-buttons">
           <button className="btn-dark">Start Now</button>

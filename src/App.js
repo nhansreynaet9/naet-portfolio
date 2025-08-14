@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Studies from "./components/studies";
 import Perpro from "./components/perpro";
 import RecentWork from "./components/Recentwork";
+import Contactform from "./components/ContactForm";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Profile />
       <Studies />
       <Perpro />
-      <RecentWork />
+      <RecentWork />\
+      <Contactform />
     </div>
   );
 }
