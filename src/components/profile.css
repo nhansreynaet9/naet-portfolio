@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: row;
   background-color: #000000;
-    padding: 60px 80px;
+    padding: 60px 40px;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -47,16 +47,15 @@
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.3s ease;
-  }
-    /* Green button style like screenshot */
+}
     .btn-green {
       background-color: #2ecc40;
       color: white;
       font-weight: 600;
-      box-shadow: 0 0 10px rgba(46, 204, 64, 0.5);
+      box-shadow: 0 0 10px #f6faf7(56, 214, 74, 1.5);
     }
     .btn-green:hover {
-      background-color: #28a537;
+      background-color: #f6faf7;
 }
 
 .profile-image {

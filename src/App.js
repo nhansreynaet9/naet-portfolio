@@ -5,7 +5,9 @@ import Studies from "./components/studies";
 import Perpro from "./components/perpro";
 import RecentWork from "./components/Recentwork";
 import ContactForm from "./components/contactform";
-import "./App.css"; // Import global styles
+import Footer from "./components/Footer";
+
+import "./App.css";
 
 function App() {
   return (
@@ -13,24 +15,28 @@ function App() {
       <Header />
 
       {/* Other sections */}
-      <section id="profile" className="section-padding">
+      <section id="profile">
         <Profile />
       </section>
 
-      <section id="studies" className="section-padding">
+      <section id="studies">
         <Studies />
       </section>
 
-      <section id="perpro" className="section-padding">
+      <section id="perpro">
         <Perpro />
       </section>
 
-      <section id="recentwork" className="section-padding">
+      <section id="Recentwork">
         <RecentWork />
       </section>
 
-      <section id="contact" className="section-padding">
+      <section id="contact">
         <ContactForm />
+      </section>
+
+      <section id="Footer">
+        <Footer />
       </section>
     </div>
   );

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 10px;
   background-color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -18,14 +18,14 @@
 
 .container .subtitle {
   color: #777;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto 40px;
   line-height: 1.5;
   text-align: center;
 }
 
 .works-wrapper {
-  display: flex;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 40px;
@@ -37,14 +37,14 @@
     max-width: 400px;
   text-align: center;
     /* ✅ Center text inside card */
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
 }
 
 .work-card img {
   display: block;
     margin: 0 auto 10px;
-  width: 300px;
+  width: 250px;
   height: auto;
     border-radius: 8px;
 }

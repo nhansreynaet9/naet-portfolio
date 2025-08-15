@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaBehance, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import "./Header.css";
 
 export default function Header() {
@@ -8,30 +8,30 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav-links">
           <li>
-            <p href="profile">Profile</p>
+            <a href="#profile">Profile </a>
           </li>
           <li>
-            <p href="#studies">Case Studies</p>
+            <a href="#studies">Case Studies</a>
           </li>
           <li>
-            <p href="perpro">Personal Projects</p>
+            <a href="#perpro">Personal Projects</a>
           </li>
           <li>
-            <p href="Recentwork">Recent Work</p>
+            <a href="#Recentwork">Recent Work</a>
           </li>
           <li>
-            <p href="#contact">Get In Touch</p>
+            <a href="#contact">Get In Touch</a>
           </li>
         </ul>
         <div className="social-icons">
           <a href="#">
             <FaLinkedinIn />
           </a>
-          <a href="#">
-            <FaBehance />
+          <a href="#https://github.com/nhansreynaet9">
+            <FaGithub />
           </a>
-          <a href="#">
-            <FaTwitter />
+          <a href="#https://www.facebook.com/share/14EeGxHti6u/?mibextid=wwXIfr">
+            <FaFacebook />
           </a>
         </div>
       </nav>
