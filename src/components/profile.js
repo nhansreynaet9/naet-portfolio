@@ -21,7 +21,7 @@ export default function Profile() {
       </div>
       <div className="hero-image">
         <img
-          src="https://scontent.fpnh10-1.fna.fbcdn.net/v/t39.30808-6/482323038_1388809562571846_5658751458333077777_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=enNbeBwamTQQ7kNvwEITGdj&_nc_oc=AdmBBjkfttGoRqJxJs-dOqlC1eTHFPiwqtqLGL3TsIXiSrFbUqME-AbhVOOmbIauZ6I&_nc_zt=23&_nc_ht=scontent.fpnh10-1.fna&_nc_gid=_qEx1gQCd_96FKqUbbJVkQ&oh=00_AfVWqdr4g9D5yxpvJiNPBJE9IZpDI4KDOKNr28tXzs_kfw&oe=68A495BE"
+          src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-2374-622f-9cfa-6f0eb02924b6/raw?se=2025-08-15T07%3A07%3A13Z&sp=r&sv=2024-08-04&sr=b&scid=7624b7f4-23e6-5007-a30b-10594b337959&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-15T05%3A59%3A46Z&ske=2025-08-16T05%3A59%3A46Z&sks=b&skv=2024-08-04&sig=2LaS7GDzbAtWMuGVMgl82TicK9uEl8uRyvkqgSAnbIY%3D"
           alt="Naet profile"
           className="profile-image"
         />
