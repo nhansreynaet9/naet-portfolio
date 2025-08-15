@@ -49,8 +49,11 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  box-shadow: #ddff1f 6px 14px rgb(355, 325, 6);
+  box-shadow: 6px 14px 20px rgb(255, 225, 6);
+    /* fixed values */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .work-image img {
   width: 100%;
@@ -119,7 +122,6 @@
   flex: 1;
   display: flex;
   justify-content: center;
- box-shadow: #00267e 6px 14px rgb(355, 325, 6);
 }
 
 .next-image img {
@@ -127,6 +129,8 @@
   max-width: 500px;
   border-radius: 8px;
   object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 6px 14px 20px rgb(0, 17, 255);
 }
 
  .my-button2 {

@@ -1,36 +1,50 @@
-.body {
-    background-color: #121212;
-}
 .header {
-  background-color: #121212; /* Dark background */
-  padding: 10px 0;
+  background-color: black;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 15px;
 }
 
+/* Navigation box in the center */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #1B1B1B;
+    padding: 0 25px;
+    border-radius: 8px;
+    max-width: 1100px;
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
+/* Navigation links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
   color: #a0a0a0;
   font-size: 14px;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
 .nav-links li:hover {
   color: white;
 }
 
+/* Social icons on the right */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
 .social-icons a {
   color: #a0a0a0;
   font-size: 16px;
@@ -40,40 +54,4 @@
 
 .social-icons a:hover {
   color: white;
-}
-.hero-content {
-  display: flex; /* side by side */
-  align-items: center; /* vertically center */
-  gap: 20px; /* space between image and text */
-}
-
-.profile-image {
-  width: 150px;   /* adjust size */
-  height: 150px;  /* adjust size */
-  border-radius: 50%; /* make it round */
-  object-fit: cover; /* ensure image covers circle */
-}
-
-.hero-text h1 {
-  margin: 0;
-}
-
-.hero-buttons {
-  margin-top: 10px;
-}
-
-.btn-yellow {
-  background-color: yellow;
-  border: none;
-  padding: 10px 20px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.btn-dark {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
 }

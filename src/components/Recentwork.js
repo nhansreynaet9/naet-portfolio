@@ -1,7 +1,6 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "./Recentwork.css";
-import Mylogo from "./image/mylogo.png";
 import Urecomlogo from "./image/urecomlogo3.png";
 
 const RecentWork = () => {
@@ -16,11 +15,12 @@ const RecentWork = () => {
       img: "https://assets.grok.com/users/d72d6e84-b6b9-4b70-8596-546ffec14e6c/generated/327be913-4e01-4de0-bb8f-16237d5cf70b/image.jpg", // replace with your image
       title: "Todo App",
       desc: "A responsive, full-stack To-Do web application built with React JS, featuring a clean and intuitive interface for managing daily tasks. The app integrates seamlessly with a Swagger-documented REST API to enable real-time task creation, editing, and deletion through GET, POST, PUT, and DELETE operations. Leveraging custom React hooks for state management and API communication, the project demonstrates modular component design, efficient data handling, and a user-focused experience.",
+      link: "https://github.com/nhansreynaet9/todo-client",
     },
   ];
 
   return (
-    <section className="recent-work">
+    <section className="RecentWork">
       <div className="container">
         {/* Title */}
         <h2 className="title">Recent Work</h2>
@@ -37,10 +37,18 @@ const RecentWork = () => {
 
           {works.map((work, index) => (
             <div key={index} className="work-card">
-              <img src={work.img} alt={work.title} />
+              {/* Image links to GitHub */}
+              <a href={work.link} target="_blank" rel="noopener noreferrer">
+                <img src={work.img} alt={work.title} />
+              </a>
+
               <h3>{work.title}</h3>
               <p>{work.desc}</p>
-              <button className="know-more">Know more &gt;</button>
+
+              {/* Optional: button can also link to GitHub */}
+              <a href={work.link} target="_blank" rel="noopener noreferrer">
+                <button className="know-more">Know more &gt;</button>
+              </a>
             </div>
           ))}
 

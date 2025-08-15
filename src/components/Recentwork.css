@@ -1,51 +1,60 @@
 .recent-work {
-  padding: 60px 20px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
   background-color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
-.recent-work .title {
-  font-size: 28px;
+.container .title {
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.recent-work .subtitle {
+.container .subtitle {
   color: #777;
   max-width: 600px;
   margin: 0 auto 40px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .works-wrapper {
-display: flex;
-align-items: flex-start;
-justify-content: center;
-gap: 40px;
-position: relative;
+  display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
 }
 
 .work-card {
-box-shadow: 6px 14px 20px rgba(0, 43, 152, 0.5);
-max-width: 400px;
-    text-align: left;
+  box-shadow: 6px 14px 20px rgba(0, 43, 152, 0.5);
+    max-width: 400px;
+  text-align: center;
+    /* ✅ Center text inside card */
     padding: 20px;
     border-radius: 20px;
 }
 
 .work-card img {
-    width: 300px;
-        height: 200px;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 5px;
+  display: block;
+    margin: 0 auto 10px;
+  width: 300px;
+  height: auto;
+    border-radius: 8px;
 }
+
 .work-card:hover {
   transform: scale(1.01);
   transition: transform 0.3s ease;
   box-shadow: #002b98 6px 14px rgb(102, 20, 275);
 }
+
 .work-card h3 {
   font-size: 18px;
   font-weight: bold;
@@ -88,4 +97,8 @@ max-width: 400px;
 
 .arrow.right {
   right: -40px;
+}
+.recent-work .works-wrapper {
+  overflow: hidden;
+  position: relative;
 }
