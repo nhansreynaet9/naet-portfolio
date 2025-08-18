@@ -2,17 +2,16 @@
   display: flex;
   justify-content: center;
   position: relative;
-    align-items: center;
+  align-items: center;
     flex-direction: column;
     padding: 60px 10px;
   background-color: #fff;
   text-align: center;
-
 }
 
 .container .title {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -24,16 +23,15 @@
   max-width: 400px;
   margin: 0 auto 40px;
   line-height: 1.5;
-
 }
 
 .works-wrapper {
   display: flex;
-    align-items: flex-start;
+  align-items: flex-start;
     justify-content: center;
     gap: 40px;
   flex-wrap: wrap;
-    /* ✅ Makes it responsive */
+    /* ✅ responsive grid */
   position: relative;
 }
 
@@ -41,10 +39,9 @@
   box-shadow: 6px 14px 20px rgba(0, 43, 152, 0.5);
   max-width: 400px;
   width: 100%;
-
   text-align: center;
   padding: 30px;
-    border-radius: 20px;
+  border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -112,6 +109,7 @@
   overflow: hidden;
   position: relative;
 }
+
 /* ==================== Responsive Breakpoints ==================== */
 
 /* Tablet screens */
@@ -130,39 +128,55 @@
   .works-wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+      /* tighter spacing */
+    }
+    
+    .work-card {
+      max-width: 90%;
+      padding: 15px;
+      /* smaller padding */
+    }
+    
+    .work-card img {
+      max-width: 180px;
+      /* smaller images */
   }
 
   .arrow {
     top: auto;
-    bottom: -50px;
-    /* move arrows below on mobile */
+    bottom: -40px;
+      /* move arrows below on mobile */
+      padding: 6px;
   }
 
   .arrow.left {
-    left: 30%;
+    left: 25%;
   }
-.work-card,
-.work-card a,
-.work-card button {
-  pointer-events: auto;
-}
+
   .arrow.right {
-    right: 30%;
+    right: 25%;
   }
 }
 
 /* Extra small screens */
 @media screen and (max-width: 480px) {
   .container .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .container .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+      margin-bottom: 20px;
   }
 
   .work-card {
-    padding: 20px;
+    max-width: 95%;
+      padding: 12px;
+    }
+    
+    .work-card img {
+      max-width: 150px;
   }
 
   .arrow.left {
