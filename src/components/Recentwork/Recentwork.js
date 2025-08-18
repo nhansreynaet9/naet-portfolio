@@ -5,14 +5,15 @@ import "./Recentwork.css";
 const RecentWork = () => {
   const works = [
     {
-      img: "https://assets.grok.com/users/d72d6e84-b6b9-4b70-8596-546ffec14e6c/generated/d0fb980b-dab2-4266-82f9-99998946664b/image.jpg", // <-- path from public folder
+      img: "/Asset/image/newUR.jpg",
       alt: "Urecom Logo",
       title: "URecomm",
       desc: "URecom is an all-in-one platform designed to help Cambodian students navigate their education and career journey with confidence. The app provides detailed recommendations about universities in Cambodia, including each university’s programs, location, events, and scholarship opportunities.",
     },
     {
-      img: "https://assets.grok.com/users/d72d6e84-b6b9-4b70-8596-546ffec14e6c/generated/327be913-4e01-4de0-bb8f-16237d5cf70b/image.jpg",
-      title: "Todo App",
+      img: "/Asset/image/todo.jpg", // ✅ local image from public folder
+      alt: "TODO",
+      title: "To-Do App",
       desc: "A responsive, full-stack To-Do web application built with React JS, featuring a clean and intuitive interface for managing daily tasks. The app integrates seamlessly with a Swagger-documented REST API to enable real-time task creation, editing, and deletion through GET, POST, PUT, and DELETE operations. Leveraging custom React hooks for state management and API communication, the project demonstrates modular component design, efficient data handling, and a user-focused experience.",
       link: "https://github.com/nhansreynaet9/todo-client",
     },
