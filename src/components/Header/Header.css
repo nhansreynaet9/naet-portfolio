@@ -42,12 +42,12 @@
 .social-icons {
   display: flex;
   gap: 24px;
-    margin-right: 95px;
-    color: #b3b3b3;
+  margin-right: 95px;
 }
 
 .icon {
   cursor: pointer;
+  color: #b3b3b3;
   transition: color 0.3s ease;
 }
 

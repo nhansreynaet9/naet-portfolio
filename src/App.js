@@ -3,11 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from "./components/Header";
-import Profile from "./components/profile";
-import Studies from "./components/studies";
-import Perpro from "./components/perpro";
-import RecentWork from "./components/Recentwork";
-import ContactForm from "./components/contactform";
+import Profile from "./components/Profile";
+import Studies from "./components/Studies";
+import perpro from "./components/Perpro";
+import RecentWork from "./components/Recentwork/Recentwork";
+import ContactForm from "./components/Contactform";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -25,27 +25,27 @@ function App() {
       <Header data-aos="fade-down" />
 
       {/* Other sections */}
-      <section id="profile" data-aos="fade-up">
+      <section id="Profile" data-aos="fade-up">
         <Profile />
       </section>
 
-      <section id="studies" data-aos="fade-right">
+      <section id="Studies" data-aos="fade-right">
         <Studies />
       </section>
 
-      <section id="perpro" data-aos="fade-left">
-        <Perpro />
+      <section id="Perpro" data-aos="fade-left">
+        <perpro />
       </section>
 
-      <section id="Recentwork" data-aos="zoom-in">
+      <section id="Recentwork" data-aos="fade-right">
         <RecentWork />
       </section>
 
-      <section id="contactform" data-aos="fade-up">
+      <section id="contactform" data-aos="fade-down">
         <ContactForm />
       </section>
 
-      <section id="Footer" data-aos="flip-up">
+      <section id="Footer">
         <Footer />
       </section>
     </div>

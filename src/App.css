@@ -1,25 +1,23 @@
 /* Prevent any unwanted horizontal scroll */
 html,
 body {
+  
   margin: 0;
   padding: 0;
+  padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
   /* ✅ stop white padding on scroll */
 }
 .App {
   text-align: center;
 }
 
-.body {
-  background-color: #282c34;
-  margin: 0;
-    padding: 0;
-}
 /* Logo responsiveness */
 .App-logo {
   height: 40vmin;
   max-width: 100%;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {

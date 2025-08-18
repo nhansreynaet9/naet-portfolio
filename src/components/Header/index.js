@@ -6,17 +6,18 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import "./Header.css"; // Import CSS file
+import { Link } from "react-scroll"; // <-- Import Link from react-scroll
+import "./Header.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "profile", href: "#profile" },
-    { name: "Case Studies", href: "#studies" },
-    { name: "Personal project", href: "#perpro" },
-    { name: "Recent work", href: "#Recentwork" },
-    { name: "Get In Touch", href: "#contactform" },
+    { name: "Profile", to: "profile" },
+    { name: "Case Studies", to: "Studies" },
+    { name: "Personal Project", to: "Perpro" },
+    { name: "Recent Work", to: "Recentwork" },
+    { name: "Get In Touch", to: "contactform" },
   ];
 
   return (
@@ -26,13 +27,16 @@ const Navbar = () => {
         <ul className="nav-links">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={link.href}
+              <Link
+                to={link.to}
+                smooth={true} // <-- enables smooth scrolling
+                duration={500} // <-- scroll duration in ms
+                offset={-50} // <-- optional: adjust for fixed header
                 className="nav-link"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -74,13 +78,16 @@ const Navbar = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
                   className="nav-link"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="mobile-icons">
