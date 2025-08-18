@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Studies from "./components/Studies";
-import perpro from "./components/Perpro";
+import Perpro from "./components/Perpro";
 import RecentWork from "./components/Recentwork/Recentwork";
 import ContactForm from "./components/Contactform";
 import Footer from "./components/Footer";
@@ -34,7 +34,7 @@ function App() {
       </section>
 
       <section id="Perpro" data-aos="fade-left">
-        <perpro />
+        <Perpro />
       </section>
 
       <section id="Recentwork" data-aos="fade-right">
