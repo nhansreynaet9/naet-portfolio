@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Header from "./components/Header";
 import Profile from "./components/profile";
 import Studies from "./components/studies";
@@ -10,32 +13,39 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (ms)
+      once: true, // run animation only once
+    });
+  }, []);
+
   return (
     <div>
-      <Header />
+      <Header data-aos="fade-down" />
 
       {/* Other sections */}
-      <section id="profile">
+      <section id="profile" data-aos="fade-up">
         <Profile />
       </section>
 
-      <section id="studies">
+      <section id="studies" data-aos="fade-right">
         <Studies />
       </section>
 
-      <section id="perpro">
+      <section id="perpro" data-aos="fade-left">
         <Perpro />
       </section>
 
-      <section id="Recentwork">
+      <section id="Recentwork" data-aos="zoom-in">
         <RecentWork />
       </section>
 
-      <section id="contact">
+      <section id="contactform" data-aos="fade-up">
         <ContactForm />
       </section>
 
-      <section id="Footer">
+      <section id="Footer" data-aos="flip-up">
         <Footer />
       </section>
     </div>

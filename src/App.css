@@ -1,11 +1,24 @@
+/* Prevent any unwanted horizontal scroll */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* ✅ stop white padding on scroll */
+}
 .App {
   text-align: center;
 }
+
 .body {
   background-color: #282c34;
+  margin: 0;
+    padding: 0;
 }
+/* Logo responsiveness */
 .App-logo {
   height: 40vmin;
+  max-width: 100%;
   pointer-events: none;
 }
 
@@ -15,22 +28,25 @@
   }
 }
 
+/* Header container */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  padding: 20px 30px;
+  padding: 5% 5%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(6, 6, 6);
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+/* Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,3 +56,36 @@
   }
 }
 
+/* -------- Responsive Breakpoints -------- */
+
+/* Tablets & small laptops */
+@media screen and (max-width: 1024px) {
+  .App-header {
+    font-size: calc(10px + 1.5vmin);
+    padding: 5% 8%;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 50vmin;
+  }
+
+  .App-header {
+    font-size: calc(10px + 1vmin);
+    padding: 8% 5%;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .App-logo {
+    height: 60vmin;
+  }
+
+  .App-header {
+    font-size: calc(10px + 0.8vmin);
+    padding: 10% 4%;
+  }
+}

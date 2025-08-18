@@ -29,7 +29,7 @@
 .hero-text p {
   font-size: 1rem;
   color: #a0a0a0;
-    /* light gray paragraph text */
+  font-family: monospace;
   margin-bottom: 20px;
   line-height: 1.6;
 }
